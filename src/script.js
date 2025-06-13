@@ -59,7 +59,7 @@ function renderProductList() {
 function renderProductDetails(productId) {
     const product = products.find(p => p.id === productId);
 
-    productDetails.innerHTML = `
+    productDetailsContainer.innerHTML = `
         <button id="back-button" class="mb-4 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">Back to list</button>
         <div class="border p-4">
             <img src="${product.image}" alt="${product.name}" class="w-full h-64 object-cover mb-4">
@@ -72,7 +72,7 @@ function renderProductDetails(productId) {
     productListContainer.classList.add('hidden');
     productDetailsContainer.classList.remove('hidden');
 
-    const backButton = document.getElementById('back-button');
+    const backButton = productDetailsContainer.querySelector('#back-button');
     backButton.addEventListener('click', () => {
         productListContainer.classList.remove('hidden');
         productDetailsContainer.classList.add('hidden');
