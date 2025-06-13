@@ -2,8 +2,8 @@
   "name": "frontend-rekrutacja-niyaz",
   "version": "0.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o ./src/output.css",
-    "start": "bun run build && bun --watch src/index.html"
+    "build": "tailwindcss -i ./src/styles.css -o ./public/output.css && copy src\\index.html public\\index.html && copy src\\script.js public\\script.js",
+    "start": "bun run build && bun --watch public/index.html"
   },
   "private": true,
   "dependencies": {},
