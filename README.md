@@ -10,7 +10,7 @@ To start a local development server, run:
 bun run start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:3000/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, open your browser and navigate to `http://localhost:3000/`. The application will automatically reload whenever you modify any of the source files. By default bun will use port 3000, but if it is in use, it will use the next available port.
 
 ## Building
 
