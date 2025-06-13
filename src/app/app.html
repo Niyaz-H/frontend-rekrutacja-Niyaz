@@ -1,8 +1,0 @@
-<main class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-  <div class="md:col-span-1" [class.hidden]="selectedProduct && 'md:block'">
-    <app-product-list (productSelected)="onProductSelected($event)"></app-product-list>
-  </div>
-  <div class="md:col-span-2" [class.hidden]="!selectedProduct">
-    <app-product-details [product]="selectedProduct" (back)="onBack()"></app-product-details>
-  </div>
-</main>
